@@ -9,28 +9,28 @@
 #include <Fonts/FreeSerif9pt7b.h>
 
 //wifi and pubsub setup
-#define WIFI_SSID "CYB"
-#define WIFI_PASS "m1ck3yM0us3"
+#define WIFI_SSID "University of Washington"
+#define WIFI_PASS ""
 WiFiClient espClient;
 PubSubClient mqtt(espClient);
 char mac[6]; //unique id
 
 // adafruit io setup
-#define IO_USERNAME   "crysis"
-#define IO_KEY        "f64f7594037b4ffeb4e1716527fa5114"
+#define IO_USERNAME   ""
+#define IO_KEY        ""
 #include "AdafruitIO_WiFi.h"
 AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
 
 unsigned long currentTimer, timer, currentApiTimer, apiTimer;
 
 // api keys
-const char* key = "b4038b91c68deb4bdec045124c6df669";
-const char* weatherkey = "73b43e4a3b95d2a36b9d9551fa564d82";
+const char* key = "";
+const char* weatherkey = "";
 
 //mqtt server and login credentials
 #define mqtt_server "mediatedspaces.net"  //this is its address, unique to the server
-#define mqtt_user "hcdeiot"               //this is its server login, unique to the server
-#define mqtt_password "esp8266"           //this is it server password, unique to the server
+#define mqtt_user ""               //this is its server login, unique to the server
+#define mqtt_password ""           //this is it server password, unique to the server
 
 // initializing variables
 String areaTemp;

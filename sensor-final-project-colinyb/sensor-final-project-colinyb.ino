@@ -9,15 +9,15 @@
 #include <DHT_U.h> // unified DHT library
 
 //wifi and pubsub setup
-#define wifi_ssid "CYB"
-#define wifi_password "m1ck3yM0us3"
+#define wifi_ssid "University of Washington"
+#define wifi_password ""
 WiFiClient espClient;
 PubSubClient mqtt(espClient);
 
 //mqtt server and login credentials
 #define mqtt_server "mediatedspaces.net"  //this is its address, unique to the server
-#define mqtt_user "hcdeiot"               //this is its server login, unique to the server
-#define mqtt_password "esp8266"           //this is it server password, unique to the server
+#define mqtt_user ""               //this is its server login, unique to the server
+#define mqtt_password ""           //this is it server password, unique to the server
 char mac[6]; //unique id
 char message[201]; //setting message length
 
